@@ -93,3 +93,17 @@ repo for its live demo link).
   included). Regenerated review screenshots.
 - To use a real photo: overwrite `images/profile.png` with a square image (512x512+). No code change
   needed.
+
+---
+
+## 2026-10-15 — Phase 5: live demo link for T-Spot
+
+**Tool:** OpenCode (Big Pickle agent) + GitHub CLI.
+
+- Checked the T-Spot repository's Pages configuration with `gh api`: it was **already enabled and
+  built** (source `master`, folder `/`, `build_type: legacy`, HTTPS enforced).
+- Verified all six project links return HTTP 200: T-Spot live demo, Patintero Legacy live demo, and
+  the four repository links (OmniSight, skillswap_project, website_url_blocker, Note-Taking-API).
+
+**Outcome:** no changes required. Next: Phase 6 (add the GitHub Actions workflow, create the public
+`Kevsssssss/portfolio` repository, push, and enable Pages via Actions).

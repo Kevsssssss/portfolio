@@ -75,9 +75,13 @@ Saving files locally does not update the live site — the push is what triggers
 
 ## T-Spot live demo (separate repo)
 
-Phase 5 enables Pages on `Kevsssssss/T-Spot-Update-v1.5.3` (branch `master`, folder `/`) so the
-project card can link a working demo. This changes no files in that repository; it only turns on
-publishing. Resulting URL: https://kevsssssss.github.io/T-Spot-Update-v1.5.3/
+The T-Spot project card links a working demo at
+https://kevsssssss.github.io/T-Spot-Update-v1.5.3/
+
+GitHub Pages was already enabled for `Kevsssssss/T-Spot-Update-v1.5.3` when Phase 5 was checked:
+source **branch `master`, folder `/`**, `build_type: legacy`, HTTPS enforced, status `built`. No
+changes were needed. (Note: this repo uses branch-based publishing, unlike this portfolio repo,
+which uses GitHub Actions.)
 
 ## Troubleshooting
 
