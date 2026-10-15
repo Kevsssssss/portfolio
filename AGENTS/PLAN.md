@@ -1,7 +1,7 @@
 # PLAN.md — living plan
 
 Last updated: 2026-10-15
-Overall status: **Phases 6-7 complete — live. Phase 8 (handoff) remaining**
+Overall status: **Phases 1-8 complete — live and published**
 
 ## Phase checklist
 
@@ -12,7 +12,7 @@ Overall status: **Phases 6-7 complete — live. Phase 8 (handoff) remaining**
 - [x] **Phase 5 — Live demo for T-Spot.** Already published (branch `master`, folder `/`); verified HTTP 200.
 - [x] **Phase 6 — CI/CD + publish.** `deploy.yml` added; public repo `Kevsssssss/portfolio` created; pushed; Pages set to GitHub Actions.
 - [x] **Phase 7 — Verify live.** Run `38747035182` succeeded; live URL and all assets return HTTP 200; private files return 404.
-- [ ] **Phase 8 — Handoff.** Screenshot checklist + submission note for the class channel.
+- [x] **Phase 8 — Handoff.** Live URL, screenshot steps, and the submission note delivered (see `AGENTS/CHECKLIST.md`). The user's remaining capture tasks are listed in **Open items** below.
 
 ## Open items (owner input needed)
 

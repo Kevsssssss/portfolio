@@ -136,3 +136,18 @@ repo for its live demo link).
 
 **Outcome:** the portfolio is published and healthy. Remaining: Phase 8 (handoff — screenshots and
 the submission note).
+
+---
+
+## 2026-10-15 — Phase 8: handoff
+
+**Tool:** OpenCode (Big Pickle agent).
+
+- Delivered the live URL, hosting details, screenshot capture steps, the submission format, and a
+  draft submission note (all recorded in `AGENTS/CHECKLIST.md`).
+- Confirmed the second CI run (`38747445942`) succeeded, so the pipeline validates and deploys on
+  every push to `main` as intended.
+
+**Status: project complete.** The site is live at https://kevsssssss.github.io/portfolio/ with all
+phases finished. Open follow-ups (owner): replace the profile photo and the five project
+placeholders, then capture the desktop and mobile submission screenshots.
