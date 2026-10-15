@@ -151,3 +151,18 @@ the submission note).
 **Status: project complete.** The site is live at https://kevsssssss.github.io/portfolio/ with all
 phases finished. Open follow-ups (owner): replace the profile photo and the five project
 placeholders, then capture the desktop and mobile submission screenshots.
+
+---
+
+## 2026-10-15 — Fix hero spacing (tags to buttons)
+
+**Tool:** OpenCode (Big Pickle agent) + Chrome headless (`puppeteer-core`) for measurement.
+
+- Reported issue: the hero tag list (`.hero__tags`) sat directly against the hero buttons
+  (`.hero__actions`) with no gap.
+- Root cause: a CSS ordering bug. `.hero__tags { margin-bottom: 1.9rem; }` was declared before
+  `.tag-list { margin: 0; }`. Both share equal specificity, so the later `margin: 0` overrode the
+  intended margin, leaving a 0 px gap.
+- Fix: raised specificity to `.tag-list.hero__tags` and set the gap to `2rem`.
+- Verified by measurement at 1440 / 768 / 390 px: gap is now **32 px** at all widths (previously
+  0 px). Full browser suite still **24/24 passed**.

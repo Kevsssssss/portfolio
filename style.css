@@ -189,7 +189,7 @@ a:hover { color: var(--accent-strong); }
 .hero__role { font-family: var(--mono); color: var(--muted); font-size: clamp(0.95rem, 2.4vw, 1.15rem); margin-bottom: 1.25rem; }
 .hero__role .dot { color: var(--accent); margin-inline: 0.35rem; }
 .hero__intro { font-size: clamp(1.02rem, 2.6vw, 1.2rem); color: #cfd8e3; max-width: 62ch; margin-bottom: 1.5rem; }
-.hero__tags { margin-bottom: 1.9rem; }
+.tag-list.hero__tags { margin-bottom: 2rem; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 
 /* ---------- Tags ---------- */
