@@ -107,3 +107,32 @@ repo for its live demo link).
 
 **Outcome:** no changes required. Next: Phase 6 (add the GitHub Actions workflow, create the public
 `Kevsssssss/portfolio` repository, push, and enable Pages via Actions).
+
+---
+
+## 2026-10-15 — Phase 6: CI/CD and publishing
+
+**Tool:** OpenCode (Big Pickle agent) + GitHub CLI.
+
+- Added `.github/workflows/deploy.yml`: on push to `main` (and manual dispatch) it validates HTML
+  with `htmlhint`, runs `tools/check.mjs`, checks required files, stages only the public site files
+  into `_site/`, and deploys with `actions/deploy-pages`.
+- Committed and pushed the repository to a new **public** repo, `Kevsssssss/portfolio`
+  (`gh repo create`), with the live URL set as the repository homepage.
+- Enabled Pages with `build_type=workflow` via `gh api` (GitHub Actions source, not a branch).
+
+## 2026-10-15 — Phase 7: live verification
+
+**Tool:** OpenCode (Big Pickle agent).
+
+- Workflow run `38747035182` completed with **success** (build + deploy).
+- Verified the live site: homepage, `404.html`, `style.css`, `script.js`, the favicon, the OG image,
+  the profile photo, and all six project images return HTTP 200 with correct content types. The
+  homepage contains the name and the avatar.
+- Confirmed the privacy boundary: `AGENTS/README.md`, `AGENTS/PROFILE.md`, `about_me.md`,
+  `README.md`, `tools/check.mjs`, and the guide `.docx` all return **404** on the live site.
+
+**Live URL:** https://kevsssssss.github.io/portfolio/
+
+**Outcome:** the portfolio is published and healthy. Remaining: Phase 8 (handoff — screenshots and
+the submission note).
