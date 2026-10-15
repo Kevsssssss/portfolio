@@ -29,3 +29,18 @@ tools used and the help each provided.
 
 **Outcome:** documentation complete; no site files yet. Next: Phase 2 (git init, `.gitignore`,
 root `README.md`).
+
+---
+
+## 2026-10-15 — Phase 2: repository setup
+
+**Tool:** OpenCode (Big Pickle agent).
+
+- Initialized the local repository on the `main` branch (first commit: `35daa94`).
+- Added `.gitignore` (`_site/`, OS/editor cruft, logs).
+- Added `.gitattributes` to normalize line endings (LF for text, binary for images/PDF/DOCX).
+- Added the root `README.md` with the description, live URL, structure, local-run steps, the
+  publishing explanation, and the AI-tools note.
+
+**Outcome:** repository initialized and committed; no site files yet. Next: Phase 3 (build the
+page: `index.html`, `style.css`, `script.js`, `404.html`, images).

@@ -1,12 +1,12 @@
 # PLAN.md — living plan
 
 Last updated: 2026-10-15
-Overall status: **Phase 1 in progress**
+Overall status: **Phase 2 complete — Phase 3 next**
 
 ## Phase checklist
 
 - [x] **Phase 1 — Documentation.** Create `AGENTS/` docs and root `AGENTS.md`.
-- [ ] **Phase 2 — Repo setup.** `git init`, `.gitignore`, root `README.md`.
+- [x] **Phase 2 — Repo setup.** `git init -b main`, `.gitignore`, `.gitattributes`, root `README.md`.
 - [ ] **Phase 3 — Build site.** `index.html`, `style.css`, `script.js`, `404.html`, images.
 - [ ] **Phase 4 — Local test.** Desktop + phone widths, all links/anchors/mailto, no console errors.
 - [ ] **Phase 5 — Live demo for T-Spot.** Enable GitHub Pages on the T-Spot repo (no file changes).
