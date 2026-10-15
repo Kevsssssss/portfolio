@@ -41,8 +41,8 @@ Contrast: text on background and accent-on-dark must stay at or above WCAG AA (4
   Avatar source: `images/profile.png` (currently a placeholder; replace the file to change it).
 - **Section heading** — small accent label + monospace heading + one-line description.
 - **Skill chips** — skill name + level bar (3 segments) + level label.
-- **Project cards** — screenshot/fallback tile, title, summary, "My contribution", tech tags, and
-  link buttons (Repo / Live demo where available).
+- **Project cards** — screenshot (JPEG, shown with `object-fit: contain` so nothing is cropped),
+  title, summary, "My contribution", tech tags, and link buttons (Repo / Live demo where available).
 - **Contact block** — large `mailto:` button + GitHub button.
 - **Footer** — name, year, small credit line.
 

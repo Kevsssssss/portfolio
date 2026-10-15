@@ -27,8 +27,8 @@ index.html            Homepage (single scrolling page)
 404.html              Not-found page
 style.css             All styles
 script.js             Mobile menu + interactions
-images/projects/      Project screenshots (or designed fallback tiles)
-images/profile.png    Profile photo (hero avatar; placeholder until replaced)
+images/projects/      Project screenshots (JPEG)
+images/profile.jpg    Profile photo (hero avatar)
 images/favicon.svg    Site icon
 assets/               Other public assets (social preview image)
 tools/check.mjs       Local link/anchor/image validator

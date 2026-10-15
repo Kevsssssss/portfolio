@@ -13,22 +13,24 @@ Adapted from page 8 of `Website_Portfolio_Student_Guide.docx`.
 - [ ] No passwords, keys, `.env`, or private documents are published.
 - [ ] I can explain the main files, my changes, and how to publish an update.
 
-## Screenshot capture steps (for the project cards)
+## Screenshot status (project cards) — COMPLETE (2026-10-16)
 
-Save every file to `images/projects/` with the exact name shown. Aim for ~1280x800, under ~400 KB.
-Until a file exists, the card shows a designed fallback tile.
+All six project screenshots and the profile photo are in place and optimized. Kept for reference:
 
-| Target file | How to capture |
-|---|---|
-| `images/projects/patintero.png` | Already provided — copied from the repo's `screenshot.png`. |
-| `images/projects/omnisight.png` | Build and run the OmniSight dashboard locally, then capture the React admin dashboard. If it cannot be run, capture the WPF app window. |
-| `images/projects/skillswap.png` | Start Redis (Docker) and the Django dev server, open the site, and capture the trading floor / chat view. |
-| `images/projects/url-blocker.png` | Double-click `urlblocker.exe`, then capture the interactive shell window after running `help`. |
-| `images/projects/note-taking-api.png` | Send a request (Postman or `curl`) to `GET /api/notes` and capture the JSON response beside the request. |
-| `images/projects/t-spot.png` | Open https://kevsssssss.github.io/T-Spot-Update-v1.5.3/ and capture the homepage. |
-| `images/profile.png` | Your profile photo. Use a square image (512x512 or larger) and keep the subject centered — it is displayed as a circle. Overwrite the placeholder file; no code change is needed. |
+| File | Source | Result |
+|---|---|---|
+| `images/projects/patintero.jpg` | repo `screenshot.png` | 1200x903, 207 KB |
+| `images/projects/omnisight.jpg` | `sources/screenshots/OmniSight_Screemshot.png` | 1200x636, 43 KB |
+| `images/projects/skillswap.jpg` | `sources/screenshots/SkillSwap_Screenshot.png` | 1200x546, 53 KB |
+| `images/projects/note-taking-api.jpg` | `sources/screenshots/API_Note_Taking_Screenshot.png` | 1200x608, 77 KB |
+| `images/projects/t-spot.jpg` | `sources/screenshots/T-Spor_Screenshot.png` | 1200x543, 103 KB |
+| `images/projects/url-blocker.jpg` | `sources/screenshots/url_blocker_screenshot.png` | 1200x644, 124 KB |
+| `images/profile.jpg` | `sources/my_profile.jpg` | 800x800, 73 KB |
 
-Windows screenshot tip: `Win + Shift + S` to snip, then paste into Paint and save as PNG.
+Raw originals live in `sources/` (git-ignored, never published). To redo a capture later:
+`Win + Shift + S` to snip, then replace the matching file in `images/projects/`.
+
+**Action item:** confirm the `alt` text on each card matches what the screenshot actually shows.
 
 ## Portfolio screenshots (for submission)
 

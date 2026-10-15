@@ -18,8 +18,7 @@ Note-Taking-API, T-Spot.
 - **Tech:** JavaScript, Phaser 3, Webpack, Node.js.
 - **Repo:** https://github.com/Kevsssssss/Patintero-Legacy
 - **Live:** https://kevsssssss.github.io/Patintero-Legacy/
-- **Screenshot:** Available — `screenshot.png` at the repository root (copy to
-  `images/projects/patintero.png`).
+- **Screenshot:** `images/projects/patintero.jpg` (real gameplay screenshot).
 
 ## 2. OmniSight
 
@@ -30,7 +29,7 @@ Note-Taking-API, T-Spot.
 - **Tech:** C# / .NET (WPF + WebView2), React / Next.js, TypeScript, SignalR, Inno Setup.
 - **Repo:** https://github.com/Kevsssssss/OmniSight
 - **Live:** none (desktop/LAN application).
-- **Screenshot:** Not available — needs capture (target `images/projects/omnisight.png`).
+- **Screenshot:** `images/projects/omnisight.jpg` (real — admin dashboard).
 
 ## 3. SkillSwap
 
@@ -43,7 +42,7 @@ Note-Taking-API, T-Spot.
   Bootstrap 5.3, HTML/CSS/JS.
 - **Repo:** https://github.com/Kevsssssss/skillswap_project
 - **Live:** none (requires a Django + Redis runtime).
-- **Screenshot:** Not available — needs capture (target `images/projects/skillswap.png`).
+- **Screenshot:** `images/projects/skillswap.jpg` (real — trading floor).
 
 ## 4. Website URL Blocker
 
@@ -55,8 +54,7 @@ Note-Taking-API, T-Spot.
 - **Tech:** Go, Windows services, hosts-file filtering.
 - **Repo:** https://github.com/Kevsssssss/website_url_blocker
 - **Live:** none (desktop application).
-- **Screenshot:** Not available — needs capture of the interactive shell
-  (target `images/projects/url-blocker.png`).
+- **Screenshot:** `images/projects/url-blocker.jpg` (real — interactive shell).
 
 ## 5. Note-Taking-API
 
@@ -67,8 +65,7 @@ Note-Taking-API, T-Spot.
 - **Tech:** Laravel, PHP 8.1+, SQLite, Composer.
 - **Repo:** https://github.com/Kevsssssss/Note-Taking-API
 - **Live:** none (local API).
-- **Screenshot:** Not available — needs capture of a sample request/response
-  (target `images/projects/note-taking-api.png`).
+- **Screenshot:** `images/projects/note-taking-api.jpg` (real — sample request/response).
 
 ## 6. T-Spot
 
@@ -78,15 +75,22 @@ Note-Taking-API, T-Spot.
 - **Tech:** HTML5, CSS3, JavaScript.
 - **Repo:** https://github.com/Kevsssssss/T-Spot-Update-v1.5.3
 - **Live:** https://kevsssssss.github.io/T-Spot-Update-v1.5.3/ (Pages enabled during Phase 5).
-- **Screenshot:** Not available — needs capture of the live site
-  (target `images/projects/t-spot.png`).
+- **Screenshot:** `images/projects/t-spot.jpg` (real — homepage).
 
 ---
 
 ## Screenshot convention
 
-- Location: `images/projects/<slug>.png`, slug = `patintero`, `omnisight`, `skillswap`,
+- Location: `images/projects/<slug>.jpg`, slug = `patintero`, `omnisight`, `skillswap`,
   `url-blocker`, `note-taking-api`, `t-spot`.
-- Size: capture at roughly 1280x800 (desktop). Keep each file under ~400 KB.
-- When a file is missing, the card shows a designed fallback tile (project initial + tech tags).
-  This is a deliberate design element, not a fake screenshot. Capture steps are in `CHECKLIST.md`.
+- All six are **real screenshots** now (replaced the earlier placeholders on 2026-10-16).
+- Format: JPEG, ~1200px wide, 40-210 KB each. Card images use `object-fit: contain`, so the full
+  screenshot is shown (thin dark bars frame it) instead of being cropped.
+- Raw, full-size originals are kept locally in `sources/` (git-ignored, never published).
+- To replace an image later, overwrite the matching `images/projects/<slug>.jpg` (keep the same
+  name) or update the `src`/`alt` in `index.html`.
+
+## Profile photo
+
+- `images/profile.jpg` — 800x800 square, JPEG, ~73 KB. Displayed as a circle in the hero; CSS crops
+  centered, so keep the face centered in the frame when replacing.

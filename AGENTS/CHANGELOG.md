@@ -154,6 +154,36 @@ placeholders, then capture the desktop and mobile submission screenshots.
 
 ---
 
+## 2026-10-16 — Real screenshots and profile photo added
+
+**Tool:** OpenCode (Big Pickle agent) + Chrome headless (`puppeteer-core`) for verification.
+
+- Received six real images from the owner: five project screenshots and a square profile photo.
+- Optimized and mapped them into the site, replacing every placeholder:
+
+  | Output | Source | Result |
+  |---|---|---|
+  | `images/projects/omnisight.jpg` | `OmniSight_Screemshot.png` | 1200x636, 43 KB |
+  | `images/projects/skillswap.jpg` | `SkillSwap_Screenshot.png` | 1200x546, 53 KB |
+  | `images/projects/note-taking-api.jpg` | `API_Note_Taking_Screenshot.png` | 1200x608, 77 KB |
+  | `images/projects/t-spot.jpg` | `T-Spor_Screenshot.png` | 1200x543, 103 KB |
+  | `images/projects/url-blocker.jpg` | `url_blocker_screenshot.png` | 1200x644, 124 KB |
+  | `images/profile.jpg` | `my_profile.jpg` (1821x1821) | 800x800, 73 KB |
+
+  Total image weight dropped from ~7.3 MB of sources to ~400 KB published.
+- Changed `.card__media img` to `object-fit: contain` so wide screenshots (ratio ~1.9-2.2) are shown
+  in full rather than cropped ~19-27% by the previous `cover` setting.
+- Updated `index.html`: new `.jpg` paths, accurate `width`/`height`, and real descriptive `alt` text
+  (replacing "Placeholder image ...").
+- Moved raw originals to a top-level `sources/` folder and added `sources/` to `.gitignore`, so the
+  unoptimized files stay on disk but are never committed or published (they were previously inside
+  `images/`, which is published wholesale).
+- Checks: `tools/check.mjs` clean, `htmlhint` clean, browser suite **25/25 passed** (7/7 images load).
+
+**Note for the owner:** confirm each card's `alt` text matches what the screenshot actually shows.
+
+---
+
 ## 2026-10-15 — Fix hero spacing (tags to buttons)
 
 **Tool:** OpenCode (Big Pickle agent) + Chrome headless (`puppeteer-core`) for measurement.

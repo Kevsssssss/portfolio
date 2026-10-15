@@ -251,8 +251,8 @@ a:hover { color: var(--accent-strong); }
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 .card:hover { transform: translateY(-4px); border-color: rgba(34, 211, 238, 0.5); }
-.card__media { aspect-ratio: 16 / 10; background: var(--surface-2); border-bottom: 1px solid var(--border); overflow: hidden; }
-.card__media img { width: 100%; height: 100%; object-fit: cover; }
+.card__media { aspect-ratio: 16 / 10; background: var(--surface-2); border-bottom: 1px solid var(--border); overflow: hidden; display: grid; place-items: center; }
+.card__media img { width: 100%; height: 100%; object-fit: contain; }
 .card__body { display: flex; flex-direction: column; gap: 0.7rem; padding: 1.25rem 1.35rem 1.4rem; flex: 1 1 auto; }
 .card__title { font-size: 1.15rem; margin: 0; }
 .card__text { color: #c3ccd8; font-size: 0.94rem; margin: 0; }

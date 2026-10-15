@@ -15,7 +15,7 @@ confirm anything marked "TO CONFIRM".
 | Email | kevinbuangjog@gmail.com |
 | GitHub | https://github.com/Kevsssssss |
 | Resume | Not included for now |
-| Photo | Placeholder at `images/profile.png` (replace with a real photo when ready) |
+| Photo | `images/profile.jpg` (800x800 square, real photo) |
 | Location | TO CONFIRM (currently omitted — not verified) |
 
 ## Home intro

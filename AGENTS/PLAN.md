@@ -13,11 +13,12 @@ Overall status: **Phases 1-8 complete — live and published**
 - [x] **Phase 6 — CI/CD + publish.** `deploy.yml` added; public repo `Kevsssssss/portfolio` created; pushed; Pages set to GitHub Actions.
 - [x] **Phase 7 — Verify live.** Run `38747035182` succeeded; live URL and all assets return HTTP 200; private files return 404.
 - [x] **Phase 8 — Handoff.** Live URL, screenshot steps, and the submission note delivered (see `AGENTS/CHECKLIST.md`). The user's remaining capture tasks are listed in **Open items** below.
+- [x] **Post-launch — Real screenshots + profile photo.** All six project screenshots and the profile photo added and optimized (2026-10-16).
 
 ## Open items (owner input needed)
 
-- Screenshots for: OmniSight, SkillSwap, Website URL Blocker, Note-Taking-API, T-Spot.
-- Replace the hero avatar placeholder `images/profile.png` with a real photo (square, 512x512+).
+- Screenshots for: OmniSight, SkillSwap, Website URL Blocker, Note-Taking-API, T-Spot. *(done 2026-10-16)*
+- Replace the hero avatar placeholder `images/profile.png` with a real photo (square, 512x512+). *(done 2026-10-16 — `images/profile.jpg`)*
 - Desktop + mobile screenshots of the finished portfolio (for submission).
 - Confirm the final About wording and skill level labels once visible on the page.
 - Confirm location line if any (currently omitted — not verified).
