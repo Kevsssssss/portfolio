@@ -78,3 +78,18 @@ testing.
 
 **Outcome:** site built and passing local checks. Next: Phase 5 (enable GitHub Pages on the T-Spot
 repo for its live demo link).
+
+---
+
+## 2026-10-15 — Profile photo placeholder
+
+**Tool:** OpenCode (Big Pickle agent).
+
+- Added a circular profile-photo area to the hero (`images/profile.png`, 512x512 placeholder with a
+  silhouette and dashed "add photo" ring).
+- Hero is now a two-column grid on desktop (text + avatar) and stacks with the avatar on top on
+  mobile; new `.hero__grid`, `.hero__media`, and `.avatar` styles.
+- Re-ran checks: `tools/check.mjs` clean, `htmlhint` clean, browser test **24/24 passed** (avatar
+  included). Regenerated review screenshots.
+- To use a real photo: overwrite `images/profile.png` with a square image (512x512+). No code change
+  needed.

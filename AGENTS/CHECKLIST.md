@@ -26,6 +26,7 @@ Until a file exists, the card shows a designed fallback tile.
 | `images/projects/url-blocker.png` | Double-click `urlblocker.exe`, then capture the interactive shell window after running `help`. |
 | `images/projects/note-taking-api.png` | Send a request (Postman or `curl`) to `GET /api/notes` and capture the JSON response beside the request. |
 | `images/projects/t-spot.png` | Open https://kevsssssss.github.io/T-Spot-Update-v1.5.3/ and capture the homepage. |
+| `images/profile.png` | Your profile photo. Use a square image (512x512 or larger) and keep the subject centered — it is displayed as a circle. Overwrite the placeholder file; no code change is needed. |
 
 Windows screenshot tip: `Win + Shift + S` to snip, then paste into Paint and save as PNG.
 

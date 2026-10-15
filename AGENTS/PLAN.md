@@ -17,6 +17,7 @@ Overall status: **Phase 4 complete — Phase 5 next**
 ## Open items (owner input needed)
 
 - Screenshots for: OmniSight, SkillSwap, Website URL Blocker, Note-Taking-API, T-Spot.
+- Replace the hero avatar placeholder `images/profile.png` with a real photo (square, 512x512+).
 - Desktop + mobile screenshots of the finished portfolio (for submission).
 - Confirm the final About wording and skill level labels once visible on the page.
 - Confirm location line if any (currently omitted — not verified).

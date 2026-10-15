@@ -36,7 +36,9 @@ Contrast: text on background and accent-on-dark must stay at or above WCAG AA (4
 ## Components
 
 - **Sticky nav** — blur/gradient surface, active-link highlight, hamburger toggle under 768px.
-- **Hero** — name, headline, intro, two buttons (View projects, Contact), subtle accent glow.
+- **Hero** — name, headline, intro, two buttons (View projects, Contact), subtle accent glow,
+  and a circular profile photo (avatar) on the right; on mobile the avatar sits above the text.
+  Avatar source: `images/profile.png` (currently a placeholder; replace the file to change it).
 - **Section heading** — small accent label + monospace heading + one-line description.
 - **Skill chips** — skill name + level bar (3 segments) + level label.
 - **Project cards** — screenshot/fallback tile, title, summary, "My contribution", tech tags, and

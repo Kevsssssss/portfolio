@@ -28,6 +28,7 @@ index.html            Homepage (single scrolling page)
 style.css             All styles
 script.js             Mobile menu + interactions
 images/projects/      Project screenshots (or designed fallback tiles)
+images/profile.png    Profile photo (hero avatar; placeholder until replaced)
 images/favicon.svg    Site icon
 assets/               Other public assets (social preview image)
 tools/check.mjs       Local link/anchor/image validator
