@@ -32,7 +32,7 @@
 
 - Name: T-Spot
 - What it does (1–2 sentences): you can search for its README file for context
-- Your contribution: Solo Dev
+- Your contribution: Co-developer — a two-person first-year project built with my classmate Simon Nathaniel V. Asis (https://github.com/fifyreee) before we learned Git; I published it to my GitHub with his permission.
 - Link (if any): https://github.com/Kevsssssss/T-Spot-Update-v1.5.3
 - Do you have a screenshot? (yes/no — if yes, just tell me the file path or drop it in the folder)
 

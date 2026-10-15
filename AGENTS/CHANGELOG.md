@@ -238,7 +238,8 @@ placeholders, then capture the desktop and mobile submission screenshots.
   "version control", per the owner's request.)
 - Verified: `tools/check.mjs` clean, `htmlhint` clean, browser suite **25/25**; the collaborator
   profile URL returned HTTP 200 before publishing.
-- Left `about_me.md` (private raw notes) untouched; it still reads "Solo Dev" for T-Spot.
+- Updated `about_me.md` (private raw notes) too: the T-Spot entry now credits the co-developer
+  instead of reading "Solo Dev".
 
 **Follow-up for the owner:** confirm the credit wording reads the way you want — say the word if you
 would like the contribution split described more specifically.
