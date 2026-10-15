@@ -20,6 +20,7 @@ Triggers: push to `main`, and manual `workflow_dispatch`.
 1. **build**
    - `actions/checkout`
    - `actions/setup-node` (LTS), then `npx htmlhint` against `index.html` and `404.html`
+   - `node tools/check.mjs` (links, anchors, images, alt text, duplicate ids)
    - verify required files exist (`index.html`, `style.css`, `script.js`, `404.html`)
    - stage only the public files into `_site/`:
      `index.html`, `404.html`, `style.css`, `script.js`, `images/`, `assets/`

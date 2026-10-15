@@ -28,7 +28,9 @@ index.html            Homepage (single scrolling page)
 style.css             All styles
 script.js             Mobile menu + interactions
 images/projects/      Project screenshots (or designed fallback tiles)
-assets/               Other public assets
+images/favicon.svg    Site icon
+assets/               Other public assets (social preview image)
+tools/check.mjs       Local link/anchor/image validator
 AGENTS/               Project documentation (plan, content, design, deploy, changelog)
 .github/workflows/    CI/CD: validate and deploy to GitHub Pages
 ```

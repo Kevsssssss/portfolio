@@ -1,14 +1,14 @@
 # PLAN.md — living plan
 
 Last updated: 2026-10-15
-Overall status: **Phase 2 complete — Phase 3 next**
+Overall status: **Phase 4 complete — Phase 5 next**
 
 ## Phase checklist
 
 - [x] **Phase 1 — Documentation.** Create `AGENTS/` docs and root `AGENTS.md`.
 - [x] **Phase 2 — Repo setup.** `git init -b main`, `.gitignore`, `.gitattributes`, root `README.md`.
-- [ ] **Phase 3 — Build site.** `index.html`, `style.css`, `script.js`, `404.html`, images.
-- [ ] **Phase 4 — Local test.** Desktop + phone widths, all links/anchors/mailto, no console errors.
+- [x] **Phase 3 — Build site.** `index.html`, `style.css`, `script.js`, `404.html`, favicon, OG image, project images (Patintero real + 5 placeholders).
+- [x] **Phase 4 — Local test.** Automated checks: 23/23 passed (overflow at 320/390/1440, mobile menu, anchors, images, alt text, `rel="noopener"`, `mailto`).
 - [ ] **Phase 5 — Live demo for T-Spot.** Enable GitHub Pages on the T-Spot repo (no file changes).
 - [ ] **Phase 6 — CI/CD + publish.** `deploy.yml`, create `Kevsssssss/portfolio`, push, enable Pages.
 - [ ] **Phase 7 — Verify live.** Watch the Action, fetch the URL, confirm content and links.

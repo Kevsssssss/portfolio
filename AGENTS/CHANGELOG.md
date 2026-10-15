@@ -44,3 +44,37 @@ root `README.md`).
 
 **Outcome:** repository initialized and committed; no site files yet. Next: Phase 3 (build the
 page: `index.html`, `style.css`, `script.js`, `404.html`, images).
+
+---
+
+## 2026-10-15 — Phase 3: build the site
+
+**Tool:** OpenCode (Big Pickle agent), plus Chrome headless via `puppeteer-core` for automated
+testing.
+
+- Built the single-page site: `index.html` (Home, About, Skills, Projects, Contact),
+  `style.css` (design direction A, mobile-first, sticky nav, mobile hamburger), `script.js`
+  (menu toggle, scroll-spy, header state, footer year), and `404.html`.
+- Added `images/favicon.svg` and `assets/og-image.png` (1200x630) for social previews.
+- Added project images: `images/projects/patintero.jpg` (real screenshot from the Patintero repo,
+  resized to 1200px and compressed to ~207 KB) and five designed placeholders
+  (`omnisight`, `skillswap`, `url-blocker`, `note-taking-api`, `t-spot`) to be replaced with real
+  screenshots later.
+- Added `tools/check.mjs` (link/anchor/image/alt/id validator) and `.htmlhintrc`.
+
+## 2026-10-15 — Phase 4: local testing
+
+**Tool:** OpenCode + Chrome headless (`puppeteer-core`).
+
+- Fixed a real responsive bug: the project grid used `minmax(320px, 1fr)`, which overflowed the
+  page by 20 px at a 320 px viewport. Changed both grids to
+  `repeat(auto-fit, minmax(min(<size>px, 100%), 1fr))`.
+- Ran `tools/check.mjs` (0 errors) and `htmlhint` on both HTML files (no errors).
+- Ran an automated browser test: **23/23 checks passed** — no horizontal overflow at 320 / 390 /
+  1440 px; all five sections present; six project cards; all six images load; the mobile hamburger
+  opens and closes correctly; link navigation and the `mailto:` links work; external links carry
+  `rel="noopener"`.
+- Saved review screenshots (desktop and mobile, full page and viewport) outside the repository.
+
+**Outcome:** site built and passing local checks. Next: Phase 5 (enable GitHub Pages on the T-Spot
+repo for its live demo link).
