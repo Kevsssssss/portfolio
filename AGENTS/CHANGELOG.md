@@ -217,3 +217,28 @@ placeholders, then capture the desktop and mobile submission screenshots.
   return **200**; the removed placeholders (`*.png`), `sources/`, and private files still return
   **404**; the live HTML references the new `.jpg` paths, contains no "Placeholder" text, and the
   live `style.css` carries `object-fit: contain`.
+
+---
+
+## 2026-10-16 — T-Spot collaborator credit + skill wording
+
+**Tool:** OpenCode (Big Pickle agent).
+
+- Owner correction: **T-Spot was a two-person first-year project**, built with classmate
+  **Simon Nathaniel V. Asis** (https://github.com/fifyreee) — before either of them had learned Git,
+  so the project stayed local. The owner later published it to his own GitHub **with his partner's
+  permission** (which is why the repository has a single author).
+- `index.html` T-Spot card: replaced `Solo developer — content, layout, and all pages.` with a
+  co-developer note, and added a **Collaborator** line linking to Simon's GitHub profile.
+- `AGENTS/PROJECTS.md`: updated the T-Spot entry — summary now notes it is a first-year two-person
+  project, the contribution reads as co-developer, a new **Collaborator** field was added, and the
+  repo line explains the provenance so the single-author repo is not mistaken for solo work.
+- `AGENTS/PROFILE.md` + `index.html`: relabelled the Tools skill `Git & GitHub` →
+  **`Version control (Git & GitHub)`**. (The skill was already listed; the label now also names
+  "version control", per the owner's request.)
+- Verified: `tools/check.mjs` clean, `htmlhint` clean, browser suite **25/25**; the collaborator
+  profile URL returned HTTP 200 before publishing.
+- Left `about_me.md` (private raw notes) untouched; it still reads "Solo Dev" for T-Spot.
+
+**Follow-up for the owner:** confirm the credit wording reads the way you want — say the word if you
+would like the contribution split described more specifically.

@@ -70,10 +70,16 @@ Note-Taking-API, T-Spot.
 ## 6. T-Spot
 
 - **Summary:** A multi-page Cebu travel guide website presenting 30 tourist destinations, each with
-  its own page, plus travel tips, a locations overview, an about page, and a contact page.
-- **My contribution:** Solo developer.
+  its own page, plus travel tips, a locations overview, an about page, and a contact page. Built as
+  a **first-year two-person project**.
+- **My contribution:** Co-developer. Built with my classmate **Simon Nathaniel V. Asis** during our
+  first year, before either of us had learned Git, so the project stayed local. With his permission
+  I published it to my GitHub to preserve it.
+- **Collaborator:** Simon Nathaniel V. Asis — https://github.com/fifyreee
 - **Tech:** HTML5, CSS3, JavaScript.
-- **Repo:** https://github.com/Kevsssssss/T-Spot-Update-v1.5.3
+- **Repo:** https://github.com/Kevsssssss/T-Spot-Update-v1.5.3 — published by me with the
+  co-developer's permission; there is no separate copy on his account because the project predates
+  our Git usage.
 - **Live:** https://kevsssssss.github.io/T-Spot-Update-v1.5.3/ (Pages enabled during Phase 5).
 - **Screenshot:** `images/projects/t-spot.jpg` (real — homepage).
 

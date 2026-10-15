@@ -68,7 +68,7 @@ Levels: **Learning** = used in coursework or a project with guidance ·
 ### Tools
 | Skill | Level |
 |---|---|
-| Git & GitHub | Practicing |
+| Version control (Git & GitHub) | Practicing |
 | VS Code / Antigravity | Practicing |
 | OpenCode | Practicing |
 | GitHub Pages | Learning |
