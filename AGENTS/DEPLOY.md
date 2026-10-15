@@ -15,7 +15,10 @@ private/working material is never public.
 
 ## Workflow (`deploy.yml`)
 
-Triggers: push to `main`, and manual `workflow_dispatch`.
+Triggers: push to `main` **when site files change** (`index.html`, `404.html`, `style.css`,
+`script.js`, `images/**`, `assets/**`, `tools/**`, or the workflow itself), plus manual
+`workflow_dispatch`. Docs-only commits (e.g. `AGENTS/**`, `README.md`) do **not** trigger a deploy,
+so they cannot disturb the live site.
 
 1. **build**
    - `actions/checkout`
@@ -91,6 +94,7 @@ which uses GitHub Actions.)
 | Images/CSS missing | Filename spelling and letter case; paths must be relative (`images/...`) not absolute (`/images/...`) for a repo subpath. |
 | "Nothing changed" online | The commit was pushed, the Action succeeded, then hard-refresh or use a private window. |
 | Build failed | Read the first real error in the run log; usually an htmlhint rule or a missing required file. |
+| Deploy step says **"Deployment cancelled."** or times out after ~10 min while "Getting Pages deployment status..." | A transient GitHub Pages backend stall, not a code problem. The build artifact is fine. Re-run the deploy: `gh run rerun <id> --repo Kevsssssss/portfolio --failed`, or trigger a fresh run with `gh workflow run deploy.yml --repo Kevsssssss/portfolio --ref main`. It succeeded on the next attempt on 2026-10-16. |
 | Pages asks viewers to sign in | The repository must be public; Pages on a private repo needs a paid plan. |
 
 ## Notes

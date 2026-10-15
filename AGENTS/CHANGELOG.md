@@ -196,3 +196,24 @@ placeholders, then capture the desktop and mobile submission screenshots.
 - Fix: raised specificity to `.tag-list.hero__tags` and set the gap to `2rem`.
 - Verified by measurement at 1440 / 768 / 390 px: gap is now **32 px** at all widths (previously
   0 px). Full browser suite still **24/24 passed**.
+
+---
+
+## 2026-10-16 — Deploy fix: Pages deployment stall + docs-only trigger filter
+
+**Tool:** OpenCode (Big Pickle agent) + GitHub CLI.
+
+- The first deploy after adding the real images (run `38770277124`) failed: `actions/deploy-pages`
+  polled "Getting Pages deployment status..." for the action's full 10-minute timeout, then aborted.
+  The **build job ("Validate and stage") had succeeded**, so the artifact itself was fine.
+- A re-run of the failed job was cancelled instantly ("Deployment cancelled."); a fresh
+  `workflow_dispatch` run (`38772236024`) then deployed successfully in seconds. Conclusion: a
+  **transient GitHub Pages backend stall**, not a repository or code problem. Documented in
+  `AGENTS/DEPLOY.md` → Troubleshooting so a future occurrence is recognised quickly.
+- Added `paths:` triggers to `deploy.yml`: only site files (`index.html`, `404.html`, `style.css`,
+  `script.js`, `images/**`, `assets/**`, `tools/**`) and the workflow itself now trigger a deploy.
+  Docs-only commits (`AGENTS/**`, `README.md`) no longer cause a redeploy.
+- Verified live after the successful run: `images/profile.jpg` and all six `images/projects/*.jpg`
+  return **200**; the removed placeholders (`*.png`), `sources/`, and private files still return
+  **404**; the live HTML references the new `.jpg` paths, contains no "Placeholder" text, and the
+  live `style.css` carries `object-fit: contain`.
